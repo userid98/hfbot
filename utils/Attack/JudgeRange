@@ -1,0 +1,125 @@
+
+class JUDGE:
+    
+    # 只输入 待判断版本号 和 版本区间
+    def __init__(self,checkinput,tablelist) -> None:
+        self.checkinput = checkinput
+        self.inputRangelist = tablelist.split(';')
+        self.isInRange = False
+
+    # 正则表达式判断版本号是否在这区间  1-2
+    def checkCloseRange( self,input, checkInput):
+        rangeleft = input.split('-')[0]
+        rangeleftArray = rangeleft.split('.')
+        rangeright = input.split('-')[1]
+        rangerightArray = rangeright.split('.')
+
+        checkInputArray = checkInput.split('.')
+
+        return self.compareTwoSide(rangeleftArray, checkInputArray) and self.compareTwoSide(checkInputArray, rangerightArray)
+
+
+    '''
+    开区间、半开区间
+    '''
+
+
+    def checkOpenRange( self,range, checkInput):
+        rangeArray = [ch for ch in range]
+        rangelen = len(range)
+        removeSE = range[1:rangelen - 1]
+        rangeleft = removeSE.split(',')[0]
+        rangeright = removeSE.split(',')[1]
+        if '[' == rangeArray[0]:
+            if rangeleft == checkInput:
+                return True
+        elif ']' == rangeArray[rangelen - 1]:
+            if rangeright == checkInput:
+                return True
+        rangeleftArray = rangeleft.split('.')
+        rangerightArray = rangeright.split('.')
+        checkInputArray = checkInput.split('.')
+        if rangeleft == 'MIN' and rangeright == 'MAX':
+            return True
+        if rangeleft == 'MIN':
+            return self.compareTwoSide(checkInputArray, rangerightArray)
+        elif rangeright == 'MAX':
+            return self.compareTwoSide(rangeleftArray, checkInputArray)
+        else:
+            # 两边都需要比较 都为真才是在区间内
+            return  self.compareTwoSide(rangeleftArray, checkInputArray) and  self.compareTwoSide(rangerightArray, checkInputArray)
+
+
+    def compareTwoSide(leftArray, rightArray):
+        checklen = min(len(leftArray), len(rightArray))
+        for i in range(0, checklen):
+            if int(leftArray[i]) > int(rightArray[i]):
+                return False
+            elif int(leftArray[i]) <= int(rightArray[i]):
+                continue
+        return True
+
+
+    '''
+    检测 离散值内
+    '''
+
+
+    def checkDistributeRange(range, checkInput):
+        rangeArray = range.split(',')
+        if checkInput in rangeArray:
+            return True
+        return False
+
+
+    '''
+    开区间 () [] 、闭区间、离散值
+    '''
+
+
+    def checkFunction(oneRange):
+        oneRangeChars = [ch for ch in oneRange]  # oneRange.split('')
+        firstSymbol = oneRangeChars[0]
+        if firstSymbol == '(' or firstSymbol == '[':
+            return 'open_range'
+        elif '-' in oneRangeChars:
+            return 'close_range'
+        elif ',' in oneRangeChars:
+            return 'distribute_range'
+
+        print(oneRange)
+        return None
+
+
+
+    def start_judge(self):
+        # chargeinput = 'strust2:2.3.6'
+        # inputRange2 = '(MIN,MAX)'
+        # inputRange = '(MIN,2.1.1];2.2.1,2.2.2;2.3.5-2.3.31;2.5.0-2.5.10;(3.0.0,MAX)'
+        # inputRangelist = inputRange.split(';')
+        # maohaolocation = chargeinput.find(':')
+        # chargeinputlen = len(chargeinput)
+        # checkinput = chargeinput[maohaolocation + 1:chargeinputlen]
+        # isInRange = False
+
+        for oneRange in  self.inputRangelist:
+            rangeSymbol = self.checkFunction(oneRange)  # 找到需要调用的方法
+            if rangeSymbol == 'close_range':
+                self.isInRange =  self.checkCloseRange(oneRange,  self.checkinput)
+                if self.isInRange:
+                    print('在区间内', oneRange)
+                    break
+            elif rangeSymbol == 'open_range':
+                self.isInRange =  self.checkOpenRange(oneRange,  self.checkinput)
+                if self.isInRange:
+                    print('在区间内', oneRange)
+                    break
+            elif rangeSymbol == 'distribute_range':
+                self.isInRange =  self.checkDistributeRange(oneRange,  self.checkinput)
+                if self.isInRange:
+                    print('在区间内', oneRange)
+                    break
+
+        if self.isInRange:
+            print('在区间内')
+        return  self.isInRange

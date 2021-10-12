@@ -1,0 +1,10 @@
+ip address,port,state,service & version,os,host,NetBIOS name,NetBIOS MAC
+192.168.199.132,135,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,139,open,netbios-ssn & Microsoft Windows netbios-ssn,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,445,open,microsoft-ds & Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP),Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,5357,open,http &  Service Unavailable & Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP),Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,49152,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,49153,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,49154,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,49155,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)
+192.168.199.132,49156,open,msrpc & Microsoft Windows RPC,Windows 7 SP1,WIN-PC,WIN-PC,00:0c:29:1b:57:c1 (VMware)

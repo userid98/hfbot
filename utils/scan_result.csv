@@ -1,0 +1,13 @@
+ip address,port,state,service & version,os,host,NetBIOS name,NetBIOS MAC
+10.30.1.10,135,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,139,open,netbios-ssn & Microsoft Windows netbios-ssn,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,445,open,microsoft-ds & Microsoft Windows Server 2008 R2 - 2012 microsoft-ds,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,3389,open,ssl/ms-wbt-server? &  ,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,9001,open,http & Oracle WebLogic Server 10.3.6.0 (Servlet 2.5; JSP 2.1; T3 enabled),Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49152,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49153,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49154,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49155,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49156,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49157,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)
+10.30.1.10,49158,open,msrpc & Microsoft Windows RPC,Windows Server 2008, ,WIN-9O2VHGBN41J,00:50:56:89:62:cd (VMware)

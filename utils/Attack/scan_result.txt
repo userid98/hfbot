@@ -1,0 +1,16 @@
+# Nmap 7.91 scan initiated Mon Oct 11 22:57:55 2021 as: nmap -oN scan_result.txt -A 10.30.1.11
+Nmap scan report for 10.30.1.11
+Host is up (0.034s latency).
+Not shown: 998 closed ports
+PORT    STATE SERVICE     VERSION
+135/tcp open  msrpc       Microsoft Windows RPC
+139/tcp open  netbios-ssn Microsoft Windows netbios-ssn
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_nbstat: NetBIOS name: ADMIN, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:81:8b (VMware)
+|_smb2-security-mode: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_smb2-time: ERROR: Script execution failed (use -d to debug)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Oct 11 22:58:08 2021 -- 1 IP address (1 host up) scanned in 12.50 seconds

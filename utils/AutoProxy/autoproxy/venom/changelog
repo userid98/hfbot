@@ -1,0 +1,4 @@
+1. Added a new feature: network traffic encryption (the -passwd option).
+2. Fixed a bug in the admin node's shell command (https://github.com/Dliv3/Venom/issues/3).
+
+Special thanks to 00theway and EddieIvan01 for their help.

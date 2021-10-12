@@ -1,0 +1,42 @@
+# Nmap 7.91 scan initiated Sun Oct 10 23:20:31 2021 as: nmap -oN scan_result.txt -A 10.30.1.10
+Nmap scan report for 10.30.1.10
+Host is up (0.025s latency).
+Not shown: 988 closed ports
+PORT      STATE SERVICE            VERSION
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server?
+| ssl-cert: Subject: commonName=WIN-9O2VHGBN41J
+| Not valid before: 2021-08-21T02:50:45
+|_Not valid after:  2022-02-20T02:50:45
+|_ssl-date: 2021-10-10T15:21:32+00:00; -1m01s from scanner time.
+9001/tcp  open  http               Oracle WebLogic Server 10.3.6.0 (Servlet 2.5; JSP 2.1; T3 enabled)
+|_http-title: Error 404--Not Found
+|_weblogic-t3-info: T3 protocol in use (WebLogic version: 10.3.6.0)
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: -1m01s, deviation: 0s, median: -1m01s
+|_nbstat: NetBIOS name: WIN-9O2VHGBN41J, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:89:62:cd (VMware)
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-10-10T15:20:32
+|_  start_date: 2021-09-03T08:23:43
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct 10 23:24:33 2021 -- 1 IP address (1 host up) scanned in 241.87 seconds

@@ -1,0 +1,136 @@
+{
+  
+    
+    "go.buildOnSave": "workspace",
+        "go.lintOnSave": "package",
+        "go.vetOnSave": "package",
+        "go.buildTags": "",
+        "go.buildFlags": [],
+        "go.lintFlags": [],
+        "go.vetFlags": [],
+        "go.coverOnSave": false,
+        "go.useCodeSnippetsOnFunctionSuggest": false,
+        "go.formatOnSave": true,
+"go.formatTool": "goreturns",
+"go.gocodeAutoBuild": false,
+"workbench.iconTheme": "material-icon-theme",
+"cmake-tools-helper.cmake_download_path": "c:\\Users\\Think\\.vscode\\extensions\\maddouri.cmake-tools-helper-0.2.1\\cmake_download",
+"C_Cpp.updateChannel": "Insiders",
+"[python]": {
+
+},
+"editor.suggestSelection": "first",
+"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+"python.jediEnabled": false,
+"workbench.colorTheme": "One Dark Pro",
+"vsicons.dontShowNewVersionMessage": true,
+"git.autofetch": true,
+"window.zoomLevel": 0,
+"editor.renderControlCharacters": true,
+"http.proxySupport": "off",
+"latex-workshop.latex.recipe.default": "lastUsed",
+"latex-workshop.view.pdf.viewer": "tab",
+
+//"editor.fontSize": 18,
+//"terminal.integrated.shellArgs.windows": ["/K chcp 65001 >nul"],
+//"terminal.integrated.fontFamily": "Lucida Console",
+//"terminal.integrated.shellArgs.windows": ["-NoExit", "/c", "chcp 65001"]
+//"editor.fontSize": 18,
+"latex-workshop.latex.tools": [
+{
+    // 编译工具和命令
+    "name": "xelatex",
+    "command": "xelatex",
+    "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "%DOCFILE%"
+    ]
+},
+{
+    "name": "pdflatex",
+    "command": "pdflatex",
+    "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "%DOCFILE%"
+    ]
+},
+{
+    "name": "bibtex",
+    "command": "bibtex",
+    "args": [
+        "%DOCFILE%"
+    ]
+}
+],
+"latex-workshop.latex.recipes": [
+{
+    "name": "xelatex",
+    "tools": [
+        "xelatex"
+    ],
+},
+{
+    "name": "pdflatex",
+    "tools": [
+        "pdflatex"
+    ]
+},
+{
+    "name": "xe->bib->xe->xe",
+    "tools": [
+        "xelatex",
+        "bibtex",
+        "xelatex",
+        "xelatex"
+    ]
+},
+{
+    "name": "pdf->bib->pdf->pdf",
+    "tools": [
+        "pdflatex",
+        "bibtex",
+        "pdflatex",
+        "pdflatex"
+    ]
+}
+],
+"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+"kite.showWelcomeNotificationOnStartup": false,
+"python.languageServer": "Pylance",
+"cmake.configureOnOpen": false,
+"workbench.editorAssociations": {
+"*.ipynb": "jupyter.notebook.ipynb",
+"*.pdf": "default"
+},
+"diffEditor.ignoreTrimWhitespace": true,
+"python.showStartPage": false,
+"highlight.regexes": {
+
+    "(//TODO)(:)": [ // A regex will be created from this string, don't forget to double escape it
+      { "color": "yellow" }, // Decoration options to apply to the first capturing group, in this case "//TODO"
+      { "color": "red" } // Decoration options to apply to the second capturing group, in this case ":"
+    ]
+
+},
+"vscodeGoogleTranslate.preferredLanguage": "Chinese (Simplified)",
+"jupyter.interactiveWindowMode": "perFile",
+"remote.SSH.remotePlatform": {
+"192.168.122.130": "linux"
+},
+"files.autoSave": "afterDelay",
+"python.pythonPath":"/bin/python3",
+"python.analysis.extraPaths":[
+"./",
+"../",
+"/home/kali/HFBOT/HFBOT/utils/Attack/"
+]
+
+
+
+
+}

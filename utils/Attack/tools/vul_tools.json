@@ -1,0 +1,287 @@
+{
+    "vuls":
+    [
+        {
+            "name":"cve-2017-5638",
+            "id":0,
+            "exptools":{
+                "msf":true,
+                "address":"multi/http/struts2_content_type_ognl",
+                "payload":"linux/x64/meterpreter/reverse_tcp",
+                "parameters":{
+                    "RPORT":"8080",
+                    "TARGETURI":"doUpload.action"
+                }
+            },
+            "poctools":{
+                "address":"tools/poc/Struts2Scan.py",
+                "success":"存在漏洞: S2-046"
+            }
+        },
+        {
+            "name":"cve-2020-14882",
+            "id":1,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2020-14882.py",
+                "parameters":"-i ip -p port -c command",
+                "error_str":"HTML"
+            }
+        },
+        {
+            "name":"MS17-010",
+            "id":2,
+            "exptools":{
+                "msf":true,
+                "address":"windows/smb/ms17_010_eternalblue",
+                "payload":"windows/x64/meterpreter/reverse_tcp"
+            }
+        },
+        {
+            "name":"MS08-067",
+            "id":3,
+            "exptools":{
+                "msf":true,
+                "address":"exploit/windows/smb/ms08_067_netapi",
+                "payload":"windows/meterpreter/reverse_tcp"
+            }
+        },
+        {
+            "name":"cve-2019-2729",
+            "id":4,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-2729.py",
+                "parameters":"-i ip -p port -c command",
+                "error_str":"HTML"
+            }
+        },
+        {
+            "name":"cve-2019-0232",
+            "id":5,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-0232.py",
+                "parameters":"-i ip -p port -c command",
+                "error_str":"HTML"
+            }
+        },
+        {
+            "name":"cve-2018-7179",
+            "id":6,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2018-7179.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-21973",
+            "id":7,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-21973.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-21975",
+            "id":8,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-21975.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-21983",
+            "id":9,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-21983.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-21985",
+            "id":10,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-21985.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-29200",
+            "id":11,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-29200.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2017-11610",
+            "id":12,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2017-11610.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2017-12636",
+            "id":13,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2017-12636.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2018-7600",
+            "id":14,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2018-7600.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2018-10933",
+            "id":15,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2018-10933.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2020-1938",
+            "id":16,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2020-1938.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2013-4730",
+            "id":17,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2013-4730shellcode.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2017-15944",
+            "id":18,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2017-15944.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2019-0708",
+            "id":19,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-0708-poc.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2019-5418",
+            "id":20,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-5418.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2019-9041",
+            "id":21,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-9041.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2019-9193",
+            "id":22,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-9193.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2019-16759",
+            "id":23,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2019-16759.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2020-11108",
+            "id":24,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2020-11108.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-22986",
+            "id":25,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-22986.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-26295",
+            "id":26,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-26295.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-26855",
+            "id":27,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-26855.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-30128",
+            "id":28,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-30128.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        },
+        {
+            "name":"cve-2021-35464",
+            "id":29,
+            "exptools":{
+                "msf":false,
+                "address":"tools/exp/CVE-2021-35464.py",
+                "parameters":"-i ip -p port -c command"
+            }
+        }
+    ],
+    "11":"11"
+}
